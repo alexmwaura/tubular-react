@@ -10,8 +10,8 @@ const dropdown = {
 };
 
 const BooleanInputOperators = [
-    { Value: 'true', Title: 'True' },
-    { Value: 'false', Title: 'False' },
+    { value: 'true', title: 'True' },
+    { value: 'false', title: 'False' },
 ];
 
 export interface DialogInputProps {
@@ -92,8 +92,8 @@ export const DialogInput: React.FunctionComponent<DialogInputProps> = ({
         >
             {column.dataType === ColumnDataType.Boolean &&
                 BooleanInputOperators.map(option => (
-                    <MenuItem key={option.Value} value={option.Value}>
-                        {option.Title}
+                    <MenuItem key={option.value} value={option.value}>
+                        {option.title}
                     </MenuItem>
                 ))}
         </TextField>
